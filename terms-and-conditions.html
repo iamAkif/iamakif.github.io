@@ -1,98 +1,420 @@
-Terms of Service – Quran Hadith Lab
 
-Effective Date: November 24, 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#075b46">
+  <meta name="description" content="Terms of Service for Quran Hadith Lab, your companion for Quran, Hadith, audio recitation and prayer times.">
 
-Welcome to Quran Hadith Lab. By downloading, accessing, or using this application, you agree to these Terms of Service. Please read them carefully.
+  <title>Terms of Service | Quran Hadith Lab</title>
 
-1. About the App
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-Quran Hadith Lab is an Islamic educational application designed to help users access Islamic knowledge and practice their faith.
+  <style>
+    :root {
+      --green: #075b46;
+      --dark-green: #064535;
+      --light-green: #eaf5ef;
+      --gold: #c99b42;
+      --text: #25352f;
+      --muted: #718078;
+      --white: #ffffff;
+      --background: #f5f8f5;
+      --border: #e5ece7;
+    }
 
-The app provides:
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-Complete Holy Quran with searchable content.
-Hadith collections and Islamic references.
-Quran and Hadith search functionality.
-Audio Quran recitation and listening features.
-Daily prayer times.
-Other Islamic educational features that may be added in future updates.
-2. Acceptance of Terms
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.8;
+    }
 
-By using Quran Hadith Lab, you agree to comply with these Terms of Service and applicable laws. If you do not agree with these terms, please discontinue using the application.
+    .hero {
+      background: linear-gradient(135deg, #064535, #08745a);
+      color: white;
+      text-align: center;
+      padding: 75px 20px 85px;
+      position: relative;
+      overflow: hidden;
+    }
 
-3. Permitted Use
+    .hero::before {
+      content: "۞";
+      position: absolute;
+      font-family: 'Amiri', serif;
+      font-size: 250px;
+      color: rgba(255,255,255,0.045);
+      top: -65px;
+      left: -30px;
+    }
 
-You may use this application for personal, educational, and non-commercial religious purposes.
+    .hero::after {
+      content: "۞";
+      position: absolute;
+      font-family: 'Amiri', serif;
+      font-size: 250px;
+      color: rgba(255,255,255,0.045);
+      bottom: -100px;
+      right: -30px;
+    }
 
-You agree not to:
+    .logo {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 20px;
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Amiri', serif;
+      font-size: 43px;
+      color: #f4d48b;
+      background: rgba(255,255,255,0.08);
+    }
 
-Use the application for unlawful activities.
-Attempt to damage or interfere with the application's functionality.
-Copy, redistribute, or commercially exploit app content without appropriate permission.
-Attempt unauthorized access to the application's systems.
-4. Religious Content Disclaimer
+    .hero h1 {
+      font-size: clamp(27px, 5vw, 42px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      margin-bottom: 8px;
+    }
 
-Quran Hadith Lab aims to provide Islamic information and educational resources.
+    .hero p {
+      color: #d8eee4;
+      font-size: 15px;
+    }
 
-Although we strive to provide accurate Quranic text, Hadith references, translations, and other Islamic materials, we cannot guarantee that all information is completely free from errors.
+    .hero .date {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 7px 17px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 30px;
+      font-size: 12px;
+      color: #f5dfa9;
+    }
 
-Users are encouraged to consult qualified Islamic scholars and authentic sources when seeking religious guidance.
+    .container {
+      width: min(900px, calc(100% - 32px));
+      margin: -35px auto 60px;
+      position: relative;
+    }
 
-5. Prayer Times Disclaimer
+    .intro {
+      background: white;
+      padding: 28px 32px;
+      border-radius: 16px;
+      box-shadow: 0 8px 35px rgba(0,50,30,0.07);
+      border-top: 3px solid var(--gold);
+      margin-bottom: 22px;
+    }
 
-Prayer times are provided for informational purposes and may depend on location, calculation methods, and local Islamic authorities.
+    .intro p {
+      color: #52645b;
+      font-size: 15px;
+    }
 
-Actual prayer times may vary depending on your location and calculation preferences.
+    .section {
+      background: white;
+      padding: 25px 30px;
+      border-radius: 14px;
+      margin-bottom: 15px;
+      border: 1px solid var(--border);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
 
-Users should verify prayer times with their local mosque or trusted Islamic authority.
+    .section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,50,30,0.05);
+    }
 
-6. Audio and Third-Party Services
+    .section h2 {
+      color: var(--green);
+      font-size: 18px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
 
-Some features may use third-party services or content providers, including audio services and advertising providers.
+    .number {
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      background: var(--light-green);
+      color: var(--green);
+      border-radius: 9px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+    }
 
-These services may have their own terms and privacy policies. We are not responsible for the availability or operation of external services.
+    .section p {
+      font-size: 14px;
+      color: #596a61;
+      margin-bottom: 10px;
+    }
 
-7. Advertisements
+    .section ul {
+      padding-left: 22px;
+      color: #596a61;
+      font-size: 14px;
+    }
 
-The application may display advertisements through Google AdMob or other advertising providers.
+    .section li {
+      margin-bottom: 7px;
+    }
 
-Third-party advertising providers may use certain information in accordance with their own privacy policies and applicable laws.
+    .contact {
+      background: var(--light-green);
+      border: 1px solid #d6e9dc;
+    }
 
-8. Intellectual Property
+    .contact h2 {
+      color: var(--dark-green);
+    }
 
-All application design, branding, logos, and original materials belong to their respective owners.
+    .contact a {
+      color: var(--green);
+      font-weight: 600;
+      text-decoration: none;
+    }
 
-The Holy Quran and other religious texts are not claimed as original intellectual property of this application. Third-party translations, recordings, and other materials remain subject to their respective rights and licenses.
+    .contact a:hover {
+      text-decoration: underline;
+    }
 
-9. Limitation of Liability
+    .footer {
+      background: var(--dark-green);
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
 
-Quran Hadith Lab is provided on an "as is" and "as available" basis.
+    .footer .arabic {
+      font-family: 'Amiri', serif;
+      font-size: 28px;
+      color: #f0d18c;
+      margin-bottom: 8px;
+    }
 
-We are not responsible for:
+    .footer p {
+      color: #c3d9ce;
+      font-size: 12px;
+    }
 
-Errors or inaccuracies in displayed information.
-Differences in prayer time calculations.
-Temporary service interruptions.
-Third-party content or service availability.
-Any damages resulting from the use of the application, to the extent permitted by applicable law.
-10. Changes to These Terms
+    @media (max-width: 600px) {
+      .hero {
+        padding: 55px 18px 70px;
+      }
 
-We may update these Terms of Service from time to time. Updated terms will be published on this page, with a revised effective date where appropriate.
+      .container {
+        width: calc(100% - 22px);
+      }
 
-Continued use of the application after changes means you acknowledge the updated terms.
+      .intro,
+      .section {
+        padding: 21px 19px;
+      }
 
-11. Termination
+      .section h2 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
 
-We reserve the right to restrict or terminate access to the application if users violate these Terms of Service or applicable laws.
+<body>
 
-12. Contact Information
+  <header class="hero">
+    <div class="logo">۞</div>
+    <h1>Terms of Service</h1>
+    <p>Quran Hadith Lab – Your Companion to Islamic Knowledge</p>
+    <span class="date">Effective Date: November 24, 2026</span>
+  </header>
 
-If you have questions, concerns, or suggestions regarding these Terms of Service, please contact the application developer:
+  <main class="container">
 
-App Name: Quran Hadith Lab
-Developer: Muhammad Akif
-Email: m.akifrasheed@gmail.com
+    <div class="intro">
+      <p>
+        Welcome to <strong>Quran Hadith Lab</strong>. These Terms of Service
+        explain the rules and conditions for using our application.
+        By downloading, accessing, or using the app, you agree to these terms.
+        Please read them carefully.
+      </p>
+    </div>
 
-Thank you for using Quran Hadith Lab.
+    <section class="section">
+      <h2><span class="number">01</span> About Our Application</h2>
+      <p>
+        Quran Hadith Lab is an Islamic educational application designed
+        to make authentic Islamic knowledge accessible and convenient.
+      </p>
+      <ul>
+        <li>Complete Holy Quran and searchable Quranic content.</li>
+        <li>Hadith collections and Islamic references.</li>
+        <li>Search functionality for Quran and Hadith.</li>
+        <li>Audio Quran recitation and listening features.</li>
+        <li>Daily Islamic prayer times.</li>
+        <li>Additional Islamic educational features and resources.</li>
+      </ul>
+    </section>
 
-May Allah bless you and guide us all towards beneficial knowledge.
+    <section class="section">
+      <h2><span class="number">02</span> Acceptance of Terms</h2>
+      <p>
+        By using Quran Hadith Lab, you confirm that you understand
+        and agree to these Terms of Service and applicable laws.
+        If you do not agree, please stop using the application.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2><span class="number">03</span> Permitted Use</h2>
+      <p>
+        You may use this application for personal, educational,
+        and religious purposes.
+      </p>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the application for unlawful activities.</li>
+        <li>Attempt to damage or disrupt application functionality.</li>
+        <li>Attempt unauthorized access to application systems.</li>
+        <li>Copy or commercially exploit protected materials without permission.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2><span class="number">04</span> Islamic Content Disclaimer</h2>
+      <p>
+        We aim to provide accurate Quranic text, Hadith references,
+        translations, and Islamic educational materials.
+        However, we cannot guarantee that all information is completely
+        free from errors.
+      </p>
+      <p>
+        Users should consult qualified Islamic scholars and trusted
+        Islamic sources when seeking religious guidance or rulings.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2><span class="number">05</span> Prayer Times Disclaimer</h2>
+      <p>
+        Prayer times are provided for informational purposes.
+        Calculations may depend on your geographical location,
+        selected calculation method, and local Islamic authorities.
+      </p>
+      <p>
+        Actual prayer times may vary. Please verify important prayer
+        timings with your local mosque or trusted Islamic authority.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2><span class="number">06</span> Audio and Third-Party Services</h2>
+      <p>
+        Some application features may depend on third-party services,
+        including audio providers and external content sources.
+        Their availability and operation may be subject to separate
+        terms and policies.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2><span class="number">07</span> Advertisements</h2>
+      <p>
+        Quran Hadith Lab may display advertisements through Google AdMob
+        or other advertising providers.
+      </p>
+      <p>
+        Third-party advertising providers may process certain information
+        according to their own privacy policies and applicable laws.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2><span class="number">08</span> Intellectual Property</h2>
+      <p>
+        The application's original design, branding, logos, and
+        original materials belong to their respective owners.
+      </p>
+      <p>
+        Quranic text and religious works are not claimed as original
+        intellectual property of this application. Third-party
+        translations, audio recordings, and other materials remain
+        subject to their respective licenses and rights.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2><span class="number">09</span> Limitation of Liability</h2>
+      <p>
+        The application is provided on an "as is" and "as available"
+        basis, to the extent permitted by applicable law.
+      </p>
+      <p>We are not responsible for:</p>
+      <ul>
+        <li>Errors or inaccuracies in displayed information.</li>
+        <li>Differences in prayer time calculations.</li>
+        <li>Temporary interruptions or service unavailability.</li>
+        <li>Third-party content and service availability.</li>
+        <li>Damages arising from use of the application, to the extent
+            permitted by applicable law.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2><span class="number">10</span> Changes to These Terms</h2>
+      <p>
+        We may update these Terms of Service from time to time.
+        Any changes will be published on this page with an updated
+        effective date where appropriate.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2><span class="number">11</span> Termination</h2>
+      <p>
+        We reserve the right to restrict or terminate access to the
+        application if these terms are violated or where required
+        by applicable law.
+      </p>
+    </section>
+
+    <section class="section contact">
+      <h2><span class="number">12</span> Contact Us</h2>
+      <p>
+        If you have questions, suggestions, or concerns regarding
+        these Terms of Service, please contact us:
+      </p>
+      <p><strong>Application:</strong> Quran Hadith Lab</p>
+      <p><strong>Developer:</strong> Muhammad Akif</p>
+      <p><strong>Email:</strong>
+        <a href="mailto:YOUR_EMAIL@example.com">m.akifrasheed@gmail.com</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="arabic">جزاكم الله خيراً</div>
+    <p>Thank you for using Quran Hadith Lab.</p>
+    <p style="margin-top: 8px;">© 2026 Quran Hadith Lab. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
